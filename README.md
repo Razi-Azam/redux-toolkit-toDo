@@ -1,4 +1,6 @@
-# A mini Todo app created using ReactJS and Redux toolkit.
+# A mini Todo app created using React JS and Redux toolkit.
+
+🖥️ [View it live](https://razi-azam.github.io/redux-toolkit-toDo/)
 
 ## Added the following new features.
 - Changed the complete look and feel of the UI.
