@@ -49,19 +49,20 @@ function Todo() {
 
   return (
     <>
-    <div>Todos</div>
+    <div><h2 className="mt-2 text-xl font-bold">--- Todos --</h2></div>
     <ul className="list-none">
         {todos.map((todo) => (
             <li key={todo.id}
                 className="mt-4 flex justify-between
-                items-center bg-zinc-800 px-4 py-2 rounded"
+                items-center bg-zinc-800 px-4 py-2 rounded
+                lg:flex-row sm:flex-col xs:flex-col"
             >
                 {editId === todo.id ? (
                     <input
                         type="text"
                         className="bg-zinc-800
                         px-4 py-2 rounded max w-4/6
-                         text-white"
+                         text-white lg:mb-0"
                         value={updatedInput}
                         onChange={(e) => setUpdatedInput(e.target.value)}
                         ref={inputRef} //pass the inputRef prop to the ref attribute of the input field
@@ -72,21 +73,21 @@ function Todo() {
                 )
                 }
                 {error && (<span className="absolute left-56 top-44 bg-red-200 px-2 my-1 text-red-800 text-lg">{error}</span>)}
-                <div className='flex'>
+                <div className='flex lg-mt-0 lg:mt-0 md:mt-4 xs:mt-4'>
                     {editId === todo.id ? (
                         <div>
-                        <button
-                            className="text-white bg-orange-600
-                            border-0 py-1 px-4 focus:outline-none 
-                            hover:bg-orange-800 rounded text-md mr-2"
-                            onClick={(e) => handleCancelEdit()}
-                        >Cancel Edit</button>
-                        <button
-                            className="text-white bg-blue-600
-                            border-0 py-1 px-4 focus:outline-none 
-                            hover:bg-blue-800 rounded text-md mr-2"
-                            onClick={handleUpdate}
-                        >update</button>
+                            <button
+                                className="text-white bg-orange-600
+                                border-0 py-1 px-4 focus:outline-none 
+                                hover:bg-orange-800 rounded text-md mr-2"
+                                onClick={(e) => handleCancelEdit()}
+                            >Cancel Edit</button>
+                            <button
+                                className="text-white bg-blue-600
+                                border-0 py-1 px-4 focus:outline-none 
+                                hover:bg-blue-800 rounded text-md mr-2"
+                                onClick={handleUpdate}
+                            >update</button>
                         </div>
                     ) : (
                         <button

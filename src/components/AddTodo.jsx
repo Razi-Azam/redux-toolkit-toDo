@@ -31,13 +31,13 @@ function AddTodo() {
     }
 
   return (
-    <form onSubmit={addTodoHandler} className='space-x-3 t-12'>
+    <form onSubmit={addTodoHandler} className='space-x-2 t-12'>
         <input
             type="text"
             className="bg-slate-700 rounded border-2 border-gray-800 
             focus:border-slate-700 focus:ring-2 focus:ring-slate-600
              outline-none text-white py-1 px-3 leading-8
-            transition-colors duration-200 ease-in-out md:w-9/12 sm:w-3/5 xs:w-full xs:my-4"
+            transition-colors duration-200 ease-in-out md:w-8/12 sm:w-1/2 xs:w-full xs:my-4"
             placeholder="Enter a todo..."
             value={input}
             onChange={(e) => setInput(e.target.value)}

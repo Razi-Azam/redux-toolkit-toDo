@@ -1,7 +1,7 @@
 import {createSlice, nanoid} from '@reduxjs/toolkit'
 
 const initialState = {
-    todos: [{id: 1, text: "Hello world"}]
+    todos: [{id: 1, text: "Create a video for YouTube."}]
 }
 
 //a slice in aa redux toolkit is similar to en enhanced version of a reducer

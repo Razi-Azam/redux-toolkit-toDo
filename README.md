@@ -1,8 +1,35 @@
-# React + Vite
+# A mini Todo app created using ReactJS and Redux toolkit.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Added the following new features.
+- Changed the complete look and feel of the UI.
+- Made the app responsive by adding a custom breakpoint to Tailwind.
+- Added validation to prevent adding an empty todo.
+- Added an extra "Clear" button to celar the text of the input field.
+- Added an "Edit" button. When the user click it, two buttons will appear i.e. ```Cancel Edit``` and ```Update```.
+- In case if the user don't want to update, then the ```Cancel Edit``` button can be clciked to cancel the edit.
+- The ```Update```. button is used to update the existing todo.
+- The ```useRef``` hook is used to set the focus of the input field when the Edit button is clicked.
 
-Currently, two official plugins are available:
+## Screenshots of the Todo app
+### Initial Screem
+![a todo app's initial screen](image.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Add a todo
+![Add a todo in a todo app](image-1.png)
+![a todo app with 2 todos.](image-2.png)
+
+### Edit a todo
+![a todo app showing edit functionality.](image-3.png)
+![a todo app updating the todo.](image-4.png)
+
+### Try to add an empty todo
+![a todo app shoiwng error.](image-5.png)
+
+### Desktop View
+![Desktop view of the todo app](image-6.png)
+
+### Tablet View
+![Tablet view of the todo app](image-7.png)
+
+### Mobile View
+![Mobile view of the todo app](image-8.png)
